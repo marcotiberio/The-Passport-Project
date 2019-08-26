@@ -9,10 +9,16 @@
     <meta name="keywords"  content="fullpage,extension,addon,plugin,interlockedslides,interlocked,together,move,locked,lock,at the same time" />
     <meta name="Resource-type" content="Document" />
 
+    <script src="https://kit.fontawesome.com/41ebb0a60a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="examples.css" />
-    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
     <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
@@ -24,11 +30,12 @@
 <ul id="menu">
     <div class="dropdown" style="text-align: right; color: transparent;">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="text-align: right; background-color: transparent; color: white; border: none;">
-        <a class="dropdown-item" data-toggle="modal" data-target="#modal-statement" style="background-color: transparent; color: white; cursor: alias; padding-right: 0.5rem;">Statement</a>
-        <a class="dropdown-item" href="#" style="background-color: transparent; color: white; cursor: alias; padding-right: 0.5rem;">Exhibition</a>
-        <a class="dropdown-item" href="#" style="background-color: transparent; color: white; cursor: alias; padding-right: 0.5rem;">Get the book</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="text-align: right; background-color: transparent; color: #bbbbbb; border: none;">
+        <a class="dropdown-item" data-toggle="modal" data-target="#modal-statement" style="background-color: transparent; color: #bbbbbb; cursor: alias; padding-right: 0.5rem;">Statement</a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#modal-exhibition" style="background-color: transparent; color: #bbbbbb; cursor: alias; padding-right: 0.5rem;">Exhibition</a>
+        <!-- <a class="dropdown-item" href="#" style="background-color: transparent; color: #bbbbbb; cursor: alias; padding-right: 0.5rem;">Get the book</a> -->
       </div>
     </div>
 </ul>
@@ -36,20 +43,54 @@
 <!-- Modal Statement -->
 <div class="modal fade" id="modal-statement" tabindex="-1" role="dialog" aria-labelledby="modal-statementLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content" style="position: absolute; top: 0; left: 0; width: 100vw; height: 90vh;">
+    <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="modal-statementLabel"><i>STATEMENT</i></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body" id="modal-body-statement">
+        <div>We live in a world divided by borders and walls where something as ephemeral as a piece of paper, a document, or a passport can acquire the potency of a curse that feels like it cannot be broken. Struggling to claim basic rights like self-determination and freedom of movement, refugees come to experience the passport not as a symbol of identity and pride, but as a source of angst.
+            With this project, I turn my camera on my own story, to create personal reportage depicting themes of displacement, asylum, and integration.
+        </div>
+        <div>
+            Calling on my own experience, I reflect on notions of freedom and the struggle to leave a country where violence, war, and aggression are prevalent. Through portraits, images of daily life, personal reflections, and handwritten testimonies, I aim to capture the hopes, fears, dreams, and isolation felt by refugees and show the unpredictable, transitory, and restricted nature of our lives. The project is executed between the UK, Netherlands and around the borders of Djibouti with Yemen.
+            <br><br>— Statement
+        </div>
       </div>
-      <div class="modal-footer">
+      <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal Exhibition -->
+<div class="modal fade" id="modal-exhibition" tabindex="-1" role="dialog" aria-labelledby="modal-exhibitionLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-exhibitionLabel"><i>EXHIBITION</i></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body" id="modal-body-exhibition">
+        <img src="imgs/exhibition001.jpg" style="width: 100%;">
+        <img src="imgs/exhibition002.jpg" style="width: 100%;">
+        <img src="imgs/exhibition003.jpg" style="width: 100%;">
+        <img src="imgs/exhibition004.jpg" style="width: 100%;">
+        <img src="imgs/exhibition001.jpg" style="width: 100%;">
+        <img src="imgs/exhibition002.jpg" style="width: 100%;">
+        <img src="imgs/exhibition003.jpg" style="width: 100%;">
+        <img src="imgs/exhibition004.jpg" style="width: 100%;">
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
     </div>
   </div>
 </div>
@@ -60,8 +101,8 @@
     <div class="section" id="landscape">
         <div class="slide" style="background-image: url(imgs/landscape1.JPG); background-size: cover;"></div>
         <div class="slide" style="background-image: url(imgs/landscape2.JPG); background-size: cover;"></div>
-        <div class="slide" style="background-color: #252525; background-size: cover; color: white;">
-          <div class="journal-entry" style="padding: 0 35% 0 35%; text-align: justify; font-size: 10px;">
+        <div class="slide" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
+          <div class="journal-entry">
             <p>“I was shocked today when I woke up and found out that it was already Friday.
               The truth is, as a refugee, you are hardly aware of the time or the days.
               It doesn’t matter if it is Saturday or Monday, or if it’s 7:00 a.m. or 9:00 p.m.
@@ -75,7 +116,7 @@
         </div>
         <div class="slide" style="background-image: url(imgs/landscape3.JPG); background-size: cover;"></div>
         <div class="slide" style="background-image: url(imgs/landscape4.jpg); background-size: cover;"></div>
-        <div class="slide" style="background-color: #252525; background-size: cover; color: white;">
+        <div class="slide" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
           <div class="journal-entry" style="padding: 0 35% 0 35%; text-align: justify; font-size: 10px;">
             <p>“Tomorrow we should get up so early, around 5:00 a.m., to be transferred to another camp
               called Budel, in the north. There will be a huge bus to collect us all. My mind goes to
@@ -88,7 +129,7 @@
           </div>
         </div>
         <div class="slide" style="background-image: url(imgs/landscape5.jpg); background-size: cover;"></div>
-        <div class="slide" style="background-color: #252525; background-size: cover; color: white;">
+        <div class="slide" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
           <div class="journal-entry" style="padding: 0 25% 0 25%; text-align: justify; font-size: 10px;">
             <p>“’What did you take with you when you left Yemen?’I asked. ‘I took my documents, some
               clothes and some pain. Then the boat sank, the few clothes we brought were gone. What I
@@ -109,12 +150,15 @@
         <div class="slide" style="background-image: url(imgs/landscape6.jpg); background-size: cover;"></div>
     </div>
     <!-- <div class="section"><h1>Section 2</h1></div> -->
-    <div class="section 2" id="portrait-letter">
+    <div class="section" id="portrait-letter">
         <div class="slide" style="background-image: url(imgs/portrait+letter1.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
         <div class="slide" style="background-image: url(imgs/portrait+letter2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="slide" style="background-color: #252525;">
         <div class="slide" style="background-image: url(imgs/portrait+letter3.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
         <div class="slide" style="background-image: url(imgs/portrait+letter4.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="slide" style="background-color: #252525;">
         <div class="slide" style="background-image: url(imgs/portrait+letter5.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="slide" style="background-color: #252525;">
         <div class="slide" style="background-image: url(imgs/portrait+letter6.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
     </div>
     <!-- <div class="section"><h1>Section 4</h1></div> -->
