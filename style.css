@@ -41,6 +41,10 @@
   border: none;
 }
 
+.fas {
+  text-shadow: 1px -1px 3px black;
+}
+
 .dropdown-menu {
   top: -10px !important;
   text-align: right !important;
@@ -55,6 +59,8 @@
   background-color: transparent !important;
   color: #bbbbbb !important;
   padding-right: 1rem !important;
+
+  text-shadow: 1px -1px 3px black;
 }
 
 .menu-item {
