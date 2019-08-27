@@ -1,3 +1,17 @@
+.arrow-down {
+  position: fixed;
+  width: 100vw;
+  bottom: 10px;
+  text-align: center;
+
+  z-index: 10000;
+
+  font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  font-size: 16px;
+}
+
+
 .dropdown-toggle::after {
   display:none;
 }
@@ -158,6 +172,28 @@
   line-height: 2.5em;
 }
 
+.get-book {
+  margin-top: 10%;
+
+  width: 150px;
+  height: 50px;
+
+  color: #bbbbbb;
+  font-size: 1.75em;
+  background-color: transparent;
+  border: 3px solid #bbbbbb;
+
+  transition: 0.5s;
+}
+
+.get-book:hover {
+  background-color: #bbbbbb;
+  color: black;
+}
+
+.display-mobile {
+  display: none;
+}
 
 /* #portrait-letter > .fp-controlArrow {
   display: none;
@@ -181,6 +217,26 @@
 @media (max-width: 1199px) {
   .modal-fullscreen-md-down {
     @include modal-fullscreen();
+  }
+
+  .display-mobile {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10%;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #252525;
+    color: #bbbbbb;
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 50px !important;
+
+    font-size:
+
+    z-index: 10000;
   }
 }
 

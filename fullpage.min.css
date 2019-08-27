@@ -78,12 +78,12 @@
 
 .fp-controlArrow.fp-prev {
   left: 15px;
-  content: url(imgs/arrow-left.png);
+  content: url(imgs/arrow-prev.png);
 }
 
 .fp-controlArrow.fp-next {
   right: 15px;
-  content: url(imgs/arrow-right.png);
+  content: url(imgs/arrow-next.png);
 }
 
 .fp-scrollable {
