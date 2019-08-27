@@ -1,36 +1,60 @@
 .dropdown-toggle::after {
-    display:none;
+  display:none;
+}
+
+.btn:focus {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
 }
 
 .btn-secondary:focus {
   outline: none !important;
   border: none !important;
+  background-color: transparent !important;
 }
 
 .btn-secondary:hover {
   outline: none !important;
   border: none !important;
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .btn-secondary:visited {
   outline: none !important;
   border: none !important;
-}
-
-.btn-secondary:link {
-  outline: none !important;
-  border: none !important;
+  background-color: transparent !important;
 }
 
 .btn-secondary:active {
   outline: none !important;
   border: none !important;
+  background-color: transparent !important;
 }
 
 .btn-secondary {
   outline: none;
   background-color: transparent;
   border: none;
+}
+
+.dropdown-menu {
+  top: -10px !important;
+  text-align: right !important;
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-size: 18px !important;
+  background-color: transparent !important;
+  color: #bbbbbb !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  background-color: transparent !important;
+  color: #bbbbbb !important;
+  padding-right: 1rem !important;
 }
 
 .menu-item {
@@ -106,6 +130,20 @@
   padding-top: 4%;
 }
 
+#modal-body-book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+
+  padding: 8% 25%;
+}
+
+.book-entry {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 10px;
+  line-height: 2.5em;
+}
+
 .journal-entry {
   font-family: 'Ubuntu Mono', monospace;
   padding: 0 35% 0 35%;
@@ -115,9 +153,9 @@
 }
 
 
-#portrait-letter > .fp-controlArrow {
+/* #portrait-letter > .fp-controlArrow {
   display: none;
-}
+} */
 
 
 
