@@ -55,6 +55,14 @@
   border: none;
 }
 
+.close {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
 .fas {
   text-shadow: 1px -1px 3px black;
 }
