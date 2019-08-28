@@ -1,249 +1,154 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>The Passport Project by Thana Faroq</title>
-    <meta name="author" content="MarcoTiberio" />
-    <meta name="description" content="We live in a world divided by borders and walls where something as
-        ephemeral as a piece of paper, a document, or a passport can acquire the
-        potency of a curse that feels like it cannot be broken. Struggling to
-        claim basic rights like self-determination and freedom of movement,
-        refugees come to experience the passport not as a symbol of identity and
-        pride, but as a source of angst. With this project, I turn my camera
-        on my own story, to create personal reportage depicting themes of
-        displacement, asylum, and integration." />
-    <meta name="keywords"  content="thana, faroq, reportage, documentary, photography, story, passport, refugees, asylum, displacement, integration, self-determination, freedom,  " />
-    <meta name="Resource-type" content="Document" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Bigger Picture</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+  	<link rel="stylesheet" type="text/css" href="examples.css" /> -->
+
+    <!-- TYPOGRAPHY -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/41ebb0a60a.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+  </head>
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-
-    <!--[if IE]>
-        <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
-    <![endif]-->
-</head>
 <body>
 
-<ul id="menu">
-    <div class="dropdown" style="text-align: right;">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #bbbbbb;">
-        <i class="fas fa-bars fa-lg"></i>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
-        <a class="dropdown-item" data-toggle="modal" data-target="#modal-statement"><span class="menu-item">Statement</span></a>
-        <a class="dropdown-item" data-toggle="modal" data-target="#modal-exhibition"><span class="menu-item">Exhibition</span></a>
-        <a class="dropdown-item" data-toggle="modal" data-target="#modal-book"><span class="menu-item">Get the book</span></a>
-      </div>
-    </div>
-</ul>
-
-<!-- Modal Statement -->
-<div class="modal fade" id="modal-statement" tabindex="-1" role="dialog" aria-labelledby="modal-statementLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-statementLabel"><i>STATEMENT</i></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="modal-body-statement">
-        <div>We live in a world divided by borders and walls where something as
-            ephemeral as a piece of paper, a document, or a passport can acquire the
-            potency of a curse that feels like it cannot be broken. Struggling to
-            claim basic rights like self-determination and freedom of movement,
-            refugees come to experience the passport not as a symbol of identity and
-            pride, but as a source of angst. With this project, I turn my camera
-            on my own story, to create personal reportage depicting themes of
-            displacement, asylum, and integration.
-        </div>
-        <div>
-            Calling on my own experience, I reflect on notions of freedom and
-            the struggle to leave a country where violence, war, and aggression
-            are prevalent. Through portraits, images of daily life, personal reflections,
-            and handwritten testimonies, I aim to capture the hopes, fears, dreams,
-            and isolation felt by refugees and show the unpredictable, transitory,
-            and restricted nature of our lives. The project is executed between the UK,
-            Netherlands and around the borders of Djibouti with Yemen.
-            <br><br>— Statement
-        </div>
-      </div>
-    </div>
+  <div id="loader" style="z-index: 5000; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: black; color: white; text-align: center;">
+    <h1 class="loader-text" style="font-size: 15em;">THE BIGGER<br>PICTURE</h1>
   </div>
-</div>
 
-<!-- Modal Exhibition -->
-<div class="modal fade" id="modal-exhibition" tabindex="-1" role="dialog" aria-labelledby="modal-exhibitionLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-exhibitionLabel"><i>EXHIBITION</i></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="menu-icon" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="modal-body-exhibition">
-        <img src="imgs/exhibition001.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition002.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition007.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition006.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition003.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition004.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition005.jpg" alt="" style="width: 100%;">
-        <img src="imgs/exhibition008.jpg" alt="" style="width: 100%;">
-      </div>
+  <header>
+    <div style="padding: 0.5%;">
+      <!-- <button>Show</button> -->
+      <!-- <button>Hide</button> -->
     </div>
-  </div>
-</div>
+    <div class="about">
+      <div id="archive-button" style="text-align: right;">archive (coming soon)</div>
+      <div class="show-about" id="about-button" style="text-align: right;">about</div>
+    </div>
+  </header>
 
-<!-- Modal Book -->
-<div class="modal fade" id="modal-book" tabindex="-1" role="dialog" aria-labelledby="modal-bookLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-bookLabel"><i>GET THE BOOK</i></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="menu-icon" aria-hidden="true">&times;</span>
-        </button>
+  <section class="main-container">
+    <div class="main-image">
+      <img id="image-focus" src="assets/pettorina111.png" alt="">
+      <svg id="svg" width="20%" height="25%" style="position: absolute; bottom: 4%; left: 28%; z-index: 3003;">
+        <rect class="show" id="rect" x="0" y="0" width="90%" height="90%" stroke="green" stroke-width="0" fill="transparent" onclick="show()"  />
+      </svg>
+      <img id="image" src="assets/test-image1.jpg" alt="">
+    </div>
+    <div class="main-text">
+      <div class="text" id="elem" style="bottom: 0;" hidden>
+        <h1 class="hide" id="hidden-text" onclick="hide()">&times;</h1>
+        <p>Since the 2000s, track and field athletes at major competitions wear
+          their names as well as their numbers on their bibs. Powerlifters wear a
+          bib benchpress shirt across their chest area to help them lift more weight.
+          In Netball, bibs are used by the umpire to identify players' positions so
+          it can be determined who is within their allowed area.
+        </p>
       </div>
-      <div class="modal-body" id="modal-body-book">
-        <div class="book-cover">
-          <img src="imgs/book-cover.png" alt="" style="width: 80%; text-align: center;">
-        </div>
-        <div class="book-entry">
-            <p>Calling on my own experience, this book reflects on notions of freedom
-              and the struggle to leave a country where violence, war, and aggression
-              are prevalent. Through portraits, images of daily life, personal reflections,
-              and handwritten testimonies, I aim to show the unpredictable, transitory, and
-              restricted nature of our lives.</p>
-            <button class="get-book">COMING SOON</button>
-        </div>
-        </div>
+      <div class="text" id="elem-about" style="bottom: 0; font-size: 120%;" hidden>
+        <p style="float: right;">The Bigger Picture is the photography blog where you will enjoy big photos,
+        like you rarely find on the Web, and learn more about their contexts by
+        zooming in on selected details of the photos and read curious information,
+        facts, anecdotes about them.
+        <!-- “We never approach an image with a blank mind but with a mind already primed
+        with memories, knowledge, prejudices. […] The frame of the photograph encloses
+        a space, a world, which we can enter (in our imaginations)”. […] And “if display
+        context can influence the meaning of a photograph, the photograph can also
+        influence the meaning of the context”. -->
+        <br>
+        The Bigger Picture wants to play with this relationship and let you explore,
+        dig into and engage with the picture.
+        <br><br>
+        Curated by Mauro Bedoni, website developed by Defrost Studio.
+      </p>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+
+  <script src="index.js"></script>
+
+  <script>
+
+  // Show text
+  var elem = document.querySelector('#elem');
+  document.addEventListener('click', function (event) {
+  	if (event.target.matches('.show')) {
+  		elem.removeAttribute('hidden');
+  	}
+  	if (event.target.matches('.hide')) {
+  		elem.setAttribute('hidden', 'true');
+  	}
+  }, false);
 
 
+  function show() {
+    document.getElementById("image").style.height = "300%";
+    document.getElementById("image").style.top = "-200%";
+    document.getElementById("image").style.left = "-65%";
+    document.getElementById("image-focus").style.height = "300%";
+    document.getElementById("image-focus").style.top = "-200%";
+    document.getElementById("image-focus").style.left = "-65%";
+    document.getElementById("svg").style.bottom = "0";
+    document.getElementById("svg").style.left = "0";
+    document.getElementById("svg").style.width = "100%";
+    document.getElementById("svg").style.height = "100%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "200%";
+    document.getElementById("rect").style.height = "100%";
+  }
+  function hide() {
+    document.getElementById("image").style.height = "100%";
+    document.getElementById("image").style.top = "0";
+    document.getElementById("image").style.left = "0";
+    document.getElementById("image-focus").style.height = "100%";
+    document.getElementById("image-focus").style.top = "0";
+    document.getElementById("image-focus").style.left = "0";
+    document.getElementById("svg").style.bottom = "4%";
+    document.getElementById("svg").style.left = "28%";
+    document.getElementById("svg").style.width = "20%";
+    document.getElementById("svg").style.height = "25%";
+    document.getElementById("rect").style.x = "0";
+    document.getElementById("rect").style.y = "0";
+    document.getElementById("rect").style.width = "90%";
+    document.getElementById("rect").style.height = "90%";
+  }
 
-<div id="myContainer">
-    <div class="section" id="landscape">
-        <div class="slide" style="background-image: url(imgs/landscape1.JPG); background-size: cover;"></div>
-        <div class="slide" style="background-image: url(imgs/landscape2.JPG); background-size: cover;"></div>
-        <div class="slide" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
-          <div class="journal-entry">
-            <p>“I was shocked today when I woke up and found out that it was already Friday.
-              The truth is, as a refugee, you are hardly aware of the time or the days.
-              It doesn’t matter if it is Saturday or Monday, or if it’s 7:00 a.m. or 9:00 p.m.
-              Days look similar and so does the time. What matters is that each night and around
-              10:00 p.m., we know that our names will be listed for either a transfer, another
-              hearing, or for any other purpose. People wait restlessly anxious about what comes next.”
-              <br><br>
-              — Journal entry, 2017
-            </p>
-          </div>
-        </div>
-        <div class="slide" alt="" style="background-image: url(imgs/landscape3.JPG); background-size: cover;"></div>
-        <div class="slide" alt="" style="background-image: url(imgs/landscape4.jpg); background-size: cover;"></div>
-        <div class="slide" alt="" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
-          <div class="journal-entry" style="padding: 0 35% 0 35%; text-align: justify; font-size: 10px;">
-            <p>“Tomorrow we should get up so early, around 5:00 a.m., to be transferred to another camp
-              called Budel, in the north. There will be a huge bus to collect us all. My mind goes to
-              the young girl from Eritrea who came here alone. She was deported back. I couldn’t be sure
-              what happened. She was in denial, she didn’t know either. The roads are too long, this silence
-              in the bus kills me.”
-              <br><br>
-              — Journal entry, 2017
-            </p>
-          </div>
-        </div>
-        <div class="slide" alt="" style="background-image: url(imgs/landscape5.jpg); background-size: cover;"></div>
-        <!-- <div class="slide" alt="" style="background-image: url(imgs/landscape7.jpg); background-size: cover;"></div> -->
-        <div class="slide" alt="" style="background-color: #252525; background-size: cover; color: #bbbbbb;">
-          <div class="journal-entry" style="padding: 0 25% 0 25%; text-align: justify; font-size: 10px;">
-            <p>“’What did you take with you when you left Yemen?’I asked. ‘I took my documents, some
-              clothes and some pain. Then the boat sank, the few clothes we brought were gone. What I
-              rescued was my family, the documents and the pain’. In a failed attempt to wipe his sweat,
-              he used his NGO commercial shirt and wiped his tears instead. His face was my sad song. I
-              looked at his children. I’ve always been intrigued about how children react when their parents
-              sob. I never liked seeing my mom in tears when I was a child. My bets are, they didn’t either.
-              Anyway I woke up this morning with a terrible headache. The headache comes and goes and so does
-              the face of that man. He showed me his old photos. He was a fine man in the past. His hair
-              was a perfect mop of black and he had the looks of one who had just woken up to a spring morning.
-              Now, he writes poems on Taiz; the city that he no longer recognizes. Taiz is where he grew up, got
-              married, had his children and the city he escaped from”
-              <br><br>
-              — Journal entry, 2019
-            </p>
-          </div>
-        </div>
-        <div class="slide" alt="" style="background-image: url(imgs/landscape6.jpg); background-size: cover;"></div>
-    </div>
-    <div class="arrow-down"><span style="cursor: s-resize;">scroll</span></div>
-    <!-- <div class="section"><h1>Section 2</h1></div> -->
-    <div class="section" id="portrait-letter">
-        <div class="slide" alt="" style="background-image: url(imgs/portrait+letter1.jpg); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-        <div class="slide" alt="" style="background-image: url(imgs/edit_lightroom/20190827-portrait+letter2.jpg); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-        <div class="slide" alt="">
-          <video id="myVideo" playsinline="" loop="" muted="" data-autoplay="" style="background-position: center top; background-size: contain; object-fit: cover; width: 100%; height: 100%;">
-			      <source src="videos/videoA.mp4" type="video/mp4">
-		      </video>
-        </div>
-        <div class="slide" alt="" style="background: black url(imgs/edit_lightroom/20190827-portrait+letter3.jpg);; background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-        <div class="slide" alt="" style="background-image: url(imgs/edit_lightroom/20190827-portrait+letter4.jpg); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-        <div class="slide" alt="">
-          <video id="myVideo" playsinline="" loop="" muted="" data-autoplay="" style="background-position: center top; background-size: contain; object-fit: cover; width: 100%; height: 100%;">
-			      <source src="videos/videoB.mp4" type="video/mp4">
-		      </video>
-        </div>
-        <div class="slide" alt="" style="background-image: url(imgs/edit_lightroom/20190827-portrait+letter5.jpg); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-        <!-- <div class="slide" alt="" style="background-image: url(imgs/video004.gif); background-size: cover; background-position: center; background-repeat: no-repeat;"></div> -->
-        <div class="slide" alt="">
-          <video id="myVideo" playsinline="" loop="" muted="" data-autoplay="" style="background-position: center top; background-size: contain; object-fit: cover; width: 100%; height: 100%;">
-			      <source src="videos/videoC.mp4" type="video/mp4">
-		      </video>
-        </div>
-        <div class="slide" alt="" style="background-image: url(imgs/edit_lightroom/20190827-portrait+letter6.jpg); background-size: 80%; background-position: center; background-repeat: no-repeat;"></div>
-    </div>
-    <!-- <div class="section"><h1>Section 4</h1></div> -->
-</div>
+  $(document).ready(function(){
+    $("#about-button").click(function(){
+      $("#elem-about").toggle();
+    });
+  });
 
-<!-- <div class="display-mobile">
-  <p>For a better experience please visit the website from a bigger device.</p>
-</div> -->
+  $(function() {
+      // setTimeout() function will be fired after page is loaded
+      // it will wait for 5 sec. and then will fire
+      // $("#successMessage").hide() function
+      setTimeout(function() {
+          $("#loader").fadeOut()
+      }, 3000);
+  });
 
-<script type="text/javascript" src="fullpage.interlockedSlides.min.js?v=2"></script>
-<script type="text/javascript" src="fullpage.extensions.min.js"></script>
+  </script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-new fullpage('#myContainer', {
-    sectionsColor: ['transparent', '#151515'],
-    anchors: ['landscapes', 'portraits&letters'],
-    menu: '#menu',
-    slidesNavigation: true,
-
-    //In addition to the extension license you'll
-    //need to acquire a fullPage.js license from https://goo.gl/5x9a22
-    licenseKey: 'E4B1D266-443A4215-8644F9F2-E272E413',
-
-    interlockedSlides: true,
-    interlockedSlidesKey: 'INSERT YOUR EXTENSION KEY HERE' //see https://goo.gl/xkUmHS
-});
-</script>
 
 </body>
+
 </html>
