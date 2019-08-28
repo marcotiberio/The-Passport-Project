@@ -168,6 +168,7 @@
 
 .book-entry {
   font-family: 'Ubuntu Mono', monospace;
+  text-align: left;
   font-size: 10px;
   line-height: 2.5em;
 }
