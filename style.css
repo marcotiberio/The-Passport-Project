@@ -80,7 +80,7 @@
 .dropdown-item {
   background-color: transparent !important;
   color: #bbbbbb !important;
-  padding-right: 1rem !important;
+  padding: 0 1rem 0 0 !important;
 
   text-shadow: 1px -1px 3px black;
 }
