@@ -143,10 +143,12 @@
 }
 
 #modal-body-statement {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
-  padding: 10% 25%;
+  padding: 10% 20%;
+
+  -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+  -moz-column-count: 2; /* Old Firefox */
+  column-count: 2;
+  column-gap: 40px;
 }
 
 #modal-body-exhibition {
