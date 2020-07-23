@@ -114,10 +114,9 @@
   min-height: 100%;
   border: 0 none;
   border-radius: 0;
-
   background-color: #252525;
-
   color: #bbbbbb;
+  overflow: auto;
 }
 
 .modal-header {
@@ -139,16 +138,17 @@
 
 .modal-body {
   font-style: italic;
-  font-size: 16px;
+  font-size: 1rem;
+  overflow: auto;
 }
 
 #modal-body-statement {
   padding: 2%;
-
   -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
   -moz-column-count: 2; /* Old Firefox */
   column-count: 2;
   column-gap: 40px;
+  overflow: auto;
 }
 
 #modal-body-exhibition {
