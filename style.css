@@ -143,7 +143,7 @@
 }
 
 #modal-body-statement {
-  padding: 2%;
+  padding: 1%;
   -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
   -moz-column-count: 2; /* Old Firefox */
   column-count: 2;
