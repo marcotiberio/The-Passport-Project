@@ -1,3 +1,21 @@
+a {
+  color: #bbbbbb;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+a:focus,
+a:active,
+a:visited {
+  color: #bbbbbb;
+  text-decoration: underline;
+  outline: 0;
+}
+
 .arrow-down {
   position: fixed;
   width: 100vw;
@@ -166,7 +184,7 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
 
-  padding: 8% 25%;
+  padding: 8% 15% 8% 20%;
 }
 
 .book-entry {
@@ -218,6 +236,14 @@
   .modal-fullscreen-xs-down {
     @include modal-fullscreen();
   }
+
+  #modal-body-book {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    padding: 20% 15%;
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -246,9 +272,18 @@
     font-family: 'Ubuntu Mono', monospace !important;
     font-size: 50px !important;
 
-    font-size:
-
     z-index: 10000;
+  }
+
+  #modal-body-book {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    padding: 20% 15%;
+  }
+
+  .book-cover img {
+    width: 100% !important;
   }
 }
 
